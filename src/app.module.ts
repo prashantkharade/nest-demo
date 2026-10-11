@@ -21,7 +21,7 @@ import { ConfigModule } from '@nestjs/config';
     ConfigModule.forRoot(),
   ],
   controllers: [AppController, TeacherController],
-  providers: [AppService],
+  providers: [AppService, TeacherService],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
