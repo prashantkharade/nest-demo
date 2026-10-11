@@ -24,7 +24,7 @@ export class CourseController {
 
   @Get()
   findAll(@Req() request: Request): string {
-    console.log(`this is request`, request);
+    // console.log(`this is request`, request);
     return this.courseService.findAll();
   }
 
